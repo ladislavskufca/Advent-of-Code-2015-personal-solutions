@@ -3,4 +3,4 @@
 Here are my solutions of Advent of Code 2015 problems. Don't you know what is Advent of Code? Check it out at http://adventofcode.com/.
 
 
-Disclaimer: Some solutions may be bad optimized (with O(n^2)).
+Disclaimer: Some solutions may be bad optimized (with O(n^2) or even worse).
