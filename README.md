@@ -1,6 +1,6 @@
-# Advent-of-Code-2015-personal-solutions
+# Advent of Code 2015 solutions by mclado
 
-Here are my solutions how I solved Advent of Code 2015 problems. Don't you know what is Advent of Code? Check it out at http://adventofcode.com/.
+Here are my solutions of Advent of Code 2015 problems. Don't you know what is Advent of Code? Check it out at http://adventofcode.com/.
 
 
-Disclaimer: Some solutions may be bad optimized (O(n^2)).
+Disclaimer: Some solutions may be bad optimized (with O(n^2)).
