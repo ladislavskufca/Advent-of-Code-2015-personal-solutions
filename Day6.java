@@ -23,7 +23,7 @@ public class Day6 {
 				if (input.substring(5, 7).equals("on")) {
 					String[] from = parse[2].split(",");
 					String[] to = parse[4].split(",");
-					turnOn(from, to);		
+					turnOn(from, to);	
 				}
 				else {
 					String[] from = parse[2].split(",");
@@ -38,11 +38,12 @@ public class Day6 {
 		
 		for (int i = 0; i < lights.length; i++) {
 			for (int j = 0; j < lights[i].length; j++) {
-				if (lights[i][j] == 1) count++;
+				count += lights[i][j];
 			}
 		}
 		
-		System.out.println("How many lights are lit? " + count);
+		//System.out.println("How many lights are lit? " + count);
+		System.out.println("Total brightness: " + count);
 		
 		sc.close();
 	}
@@ -55,8 +56,9 @@ public class Day6 {
 		
 		for (int i = fromX; i <= toX; i++) {
 			for (int j = fromY; j <= toY; j++) {
-				if (lights[i][j] == 1) lights[i][j] = 0;
-				else lights[i][j] = 1;
+				//if (lights[i][j] == 1) lights[i][j] = 0;
+				//else lights[i][j] = 1;
+				lights[i][j] = lights[i][j] + 2;
 			}
 		}
 	}
@@ -69,7 +71,7 @@ public class Day6 {
 		
 		for (int i = fromX; i <= toX; i++) {
 			for (int j = fromY; j <= toY; j++) {
-				lights[i][j] = 1;
+				lights[i][j]++;
 			}
 		}	
 	}
@@ -82,7 +84,7 @@ public class Day6 {
 		
 		for (int i = fromX; i <= toX; i++) {
 			for (int j = fromY; j <= toY; j++) {
-				lights[i][j] = 0;
+				if (lights[i][j] != 0) lights[i][j]--;
 			}
 		}
 	}
