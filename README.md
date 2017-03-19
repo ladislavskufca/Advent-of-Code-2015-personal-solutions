@@ -1,4 +1,4 @@
-# Advent of Code 2015 solutions by mclado
+# Advent of Code solutions
 
 Here are my solutions of Advent of Code 2015 problems. Don't you know what Advent of Code is? Check it out at http://adventofcode.com/.
 
